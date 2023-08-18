@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skins (2007 - 2013)</title>
+    <link rel="icon" type="image/x-icon" href="https://github.com/TotoB12/files/blob/main/favicon_skins.gif?raw=true">
+    <link rel="apple-touch-icon" href="https://github.com/TotoB12/files/blob/main/favicon_skins.gif?raw=true">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #343a40;
+            color: #fff;
+        }
+        .folder, .episode {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+        .menu {
+          margin-bottom: 20px;
+        }
+        .folder:hover, .episode:hover {
+            transform: scale(1.05);
+        }
+        #video-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+        }
+        #video-container video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 80%;
+        }
+    </style>
+</head>
+<body class="text-center">
+    <br>
+    <img src="https://github.com/TotoB12/files/blob/main/skins.png?raw=true" alt="Italian Trulli">
+    <h1 class="mt-3">(2007 - 2013)</h1>
+    <div class="container mt-5">
+        <div class="row" id="seasons">
+            <div class="col-md-4 folder" data-season="season1" data-title="Skins - Season 1">
+                <div class="card">
+                    <div class="card-body text-dark">Season 1</div>
+                </div>
+            </div>
+            <div class="col-md-4 folder" data-season="season2" data-title="Skins - Season 2">
+                <div class="card">
+                    <div class="card-body text-dark">Season 2</div>
+                </div>
+            </div>
+            <div class="col-md-4 folder" data-season="season3" data-title="Skins - Season 3">
+                <div class="card">
+                    <div class="card-body text-dark">Season 3</div>
+                </div>
+            </div>
+            <div class="col-md-4 folder" data-season="season4" data-title="Skins - Season 4">
+                <div class="card">
+                    <div class="card-body text-dark">Season 4</div>
+                </div>
+            </div>
+            <div class="col-md-4 folder" data-season="season5" data-title="Skins - Season 5">
+                <div class="card">
+                    <div class="card-body text-dark">Season 5</div>
+                </div>
+            </div>
+            <div class="col-md-4 folder" data-season="season6" data-title="Skins - Season 6">
+                <div class="card">
+                    <div class="card-body text-dark">Season 6</div>
+                </div>
+            </div>
+            <div class="col-md-4 folder" data-season="season7" data-title="Skins - Season 7">
+                <div class="card">
+                    <div class="card-body text-dark">Season 7</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="season1" class="season" style="display: none;">
+            <div class="d-flex justify-content-center align-items-center mt-5 position-relative menu">
+                <button class="btn btn-secondary back-button position-absolute" style="left: 0;"><i class="fas fa-arrow-left"></i>Back</button>
+                <h2>Season 1 Episodes</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150335&authkey=!ABOCYDyiOEjnPZY" data-title="Tony - S01E01 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 1 - Tony</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150341&authkey=!AIpPAmt1aZmAiV4" data-title="Cassie - S01E02 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 2 - Cassie</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150339&authkey=!AKblXNhaUg1Jd84" data-title="Jal - S01E03 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 3 - Jal</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150338&authkey=!AOwzclPSSNZif3o" data-title="Chris - S01E04 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 4 - Chris</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150337&authkey=!ANBxxvrM8eSNFJc" data-title="Sid - S01E05 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 5 - Sid</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150336&authkey=!ANdsAhYPej2eM10" data-title="Maxxie and Anwar - S01E06 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 6 - Maxxie and Anwar</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150342&authkey=!AM_oZcnMQia9PJk" data-title="Michelle - S01E07 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 7 - Michelle</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150333&authkey=!AHyjeIGSzHrpmNg" data-title="Effy - S01E08 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 8 - Effy</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150340&authkey=!ABwJtWMZ25I1wf4" data-title="Everyone - S01E09 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 9 - Everyone</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="season2" class="season" style="display: none;">
+            <div class="d-flex justify-content-center align-items-center mt-5 position-relative menu">
+                <button class="btn btn-secondary back-button position-absolute" style="left: 0;"><i class="fas fa-arrow-left"></i>Back</button>
+                <h2>Season 2 Episodes</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150350&authkey=!AHzNl3RUoC8gQ7U" data-title="Tony and Maxxie - S02E01 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 1 - Tony and Maxxie</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150344&authkey=!AI4BmqJjJIMoZow" data-title="Sketch - S02E02 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 2 - Sketch</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150348&authkey=!AICmIxJ6j6ScHrA" data-title="Sid - S02E03 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 3 - Sid</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150345&authkey=!AI66XxSFoSutz1c" data-title="Michelle - S02E04 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 4 - Michelle</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150351&authkey=!ABGyzsrNKHucTO0" data-title="Chris - S02E05 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 5 - Chris</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150347&authkey=!APPAR4zCAMqbt_U" data-title="Tony - S02E06 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 6 - Tony</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150346&authkey=!AEvIXjvahXbY1vQ" data-title="Effy - S02E07 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 7 - Effy</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150349&authkey=!ANt71r3zK7_jG18" data-title="Jal - S02E08 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 8 - Jal</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150343&authkey=!AOUOjzix6Lf4zxs" data-title="Cassie - S02E09 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 9 - Cassie</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150352&authkey=!APA0J_y6rwg3abM" data-title="Final Goodbyes - S02E10 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 10 - Final Goodbyes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="season3" class="season" style="display: none;">
+            <div class="d-flex justify-content-center align-items-center mt-5 position-relative menu">
+                <button class="btn btn-secondary back-button position-absolute" style="left: 0;"><i class="fas fa-arrow-left"></i>Back</button>
+                <h2>Season 3 Episodes</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150306&authkey=!ADNkg0wB2cg8rSE" data-title="Everyone - S03E01 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 1 - Everyone</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150315&authkey=!AASCl1mbmcIdYno" data-title="Cook - S03E02 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 2 - Cook</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150309&authkey=!ABBC1lEKJ_wp7g8" data-title="Thomas - S03E03 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 3 - Thomas</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150311&authkey=!AL3JB1Pb5WO0FDY" data-title="Pandora - S03E04 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 4 - Pandora</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150310&authkey=!AJIZ9z7XybCD2p8" data-title="Freddie - S03E05 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 5 - Freddie</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150313&authkey=!APczeMz3GYpmkB8" data-title="Naomi - S03E06 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 6 - Naomi</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150314&authkey=!AL33ndapuCwO9as" data-title="JJ - S03E07 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 7 - JJ</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150317&authkey=!ANasNndKXjaUr5o" data-title="Effy - S03E08 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 8 - Effy</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150312&authkey=!AJQZJGyA2YV3o74" data-title="Katie and Emily - S03E09 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 9 - Katie and Emily</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150316&authkey=!AE6AdJnQtBuIKOU" data-title="Finale - S03E10 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 10 - Finale</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="season4" class="season" style="display: none;">
+            <div class="d-flex justify-content-center align-items-center mt-5 position-relative menu">
+                <button class="btn btn-secondary back-button position-absolute" style="left: 0;"><i class="fas fa-arrow-left"></i>Back</button>
+                <h2>Season 4 Episodes</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150357&authkey=!AGycg-s3RoHq990" data-title="Thomas - S04E01 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 1 - Thomas</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150360&authkey=!AJzpJIRhVzEaqsI" data-title="Emily - S04E02 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 2 - Emily</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150355&authkey=!AA_LIKS6_cUT_dc" data-title="Cook - S04E03 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 3 - Cook</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150356&authkey=!AB_LvHkec65-2SA" data-title="Katie - S04E04 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 4 - Katie</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150354&authkey=!AEfdd4L-bFUAXwE" data-title="Freddie - S04E05 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 5 - Freddie</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150358&authkey=!AFRR3-_4vUp-8LQ" data-title="JJ - S04E06 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 6 - JJ</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150359&authkey=!AJyqTtunEKk5-iw" data-title="Effy - S04E07 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 7 - Effy</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150353&authkey=!AHw7sTAwgy8tmIU" data-title="Everyone - S04E08 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 8 - Everyone</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="season5" class="season" style="display: none;">
+            <div class="d-flex justify-content-center align-items-center mt-5 position-relative menu">
+                <button class="btn btn-secondary back-button position-absolute" style="left: 0;"><i class="fas fa-arrow-left"></i>Back</button>
+                <h2>Season 5 Episodes</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150304&authkey=!ACKfVjLYqq3nP-8" data-title="Franky - S05E01 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 1 - Franky</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150307&authkey=!AJdNdG2N-7aUzM0" data-title="Rich - S05E02 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 2 - Rich</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150303&authkey=!AAcnC0UzkvaAOgk" data-title="Mini - S05E03 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 3 - Mini</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150305&authkey=!AE-St3sEccliO4k" data-title="Liv - S05E04 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 4 - Liv</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150300&authkey=!ACgiAfWqpdlwGTU" data-title="Nick - S05E05 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 5 - Nick</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150308&authkey=!AN7oKRjV6DHPUvw" data-title="Alo - S05E06 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 6 - Alo</div>
+                    </div>
+                </div>
+              
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150301&authkey=!AOJ_rKUun6PYhKQ" data-title="Grace - S05E07 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 7 - Grace</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150302&authkey=!AP1jFVcOXYQ2-nE" data-title="Everyone - S05E08 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 8 - Everyone</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="season6" class="season" style="display: none;">
+            <div class="d-flex justify-content-center align-items-center mt-5 position-relative menu">
+                <button class="btn btn-secondary back-button position-absolute" style="left: 0;"><i class="fas fa-arrow-left"></i>Back</button>
+                <h2>Season 6 Episodes</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150331&authkey=!ALleQenBU_kCZG4" data-title="Everyone - S06E01 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 1 - Everyone</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150332&authkey=!AGSnr3QomLOhi20" data-title="Rich - S06E02 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 2 - Rich</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150328&authkey=!AKEHruQPWA5T8_o" data-title="Alex - S06E03 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 3 - Alex</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150327&authkey=!ANAcENPvKVLTv1c" data-title="Franky - S06E04 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 4 - Franky</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150330&authkey=!AC74MFvZW7gJT68" data-title="Mini - S06E05 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 5 - Mini</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150329&authkey=!AM_7qwnxluJKvxQ" data-title="Nick - S06E06 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 6 - Nick</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150325&authkey=!AI7qMsn3TjAQHqY" data-title="Alo - S06E07 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 7 - Alo</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150334&authkey=!AEOjXBogHRB7cpA" data-title="Liv - S06E08 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 8 - Liv</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150324&authkey=!AFxgRASA6aHQyxA" data-title="Mini and Franky - S06E09 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 9 - Mini and Franky</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150326&authkey=!ANatebi99Dv0YZM" data-title="Finale - S06E10 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 10 - Finale</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="season7" class="season" style="display: none;">
+            <div class="d-flex justify-content-center align-items-center mt-5 position-relative menu">
+                <button class="btn btn-secondary back-button position-absolute" style="left: 0;"><i class="fas fa-arrow-left"></i>Back</button>
+                <h2>Season 7 Episodes</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150318&authkey=!APiP6hwsq81LMgg" data-title="Fire (1) - S07E01 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 1 - Fire (1)</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150322&authkey=!AIkoYlzl0l5Jerk" data-title="Fire (2) - S07E02 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 2 - Fire (2)</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150319&authkey=!AKFZGOyz9dE8jyM" data-title="Pure (1) - S07E03 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 3 - Pure (1)</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150323&authkey=!AOd-ImhI4isz5Ho" data-title="Pure (2) - S07E04 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 4 - Pure (2)</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150321&authkey=!AATzOfyX3GXD7cQ" data-title="Rise (1) - S07E05 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 5 - Rise (1)</div>
+                    </div>
+                </div>
+                <div class="col-md-4 episode" data-video="https://onedrive.live.com/download?resid=7E4ED00203B905C4%2150320&authkey=!APoQsk9X48Jyow4" data-title="Rise (2) - S07E06 - Skins">
+                    <div class="card">
+                        <div class="card-body text-dark">Episode 6 - Rise (2)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="video-container" onclick="closeVideo()">
+            <video controls autoplay id="video">
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function() {
+            $('.folder').click(function() {
+                var seasonId = $(this).data('season');
+                var title = $(this).data('title');
+                $('.folder').hide();
+                $('#' + seasonId).show();
+                document.title = title;
+            });
+
+            $('.episode').click(function() {
+                var videoLink = $(this).data('video');
+                var title = $(this).data('title');
+                $('#video').attr('src', videoLink);
+                $('#video-container').show();
+                document.title = title;
+            });
+
+            $('.back-button').click(function() {
+                $('.season').hide();
+                $('.folder').show();
+                document.title = 'Skins Seasons';
+            });
+
+            $('#video').click(function(event) {
+                event.stopPropagation();
+            });
+
+            $('#video').on('mousedown', function(event) {
+                event.stopPropagation();
+                event.preventDefault();
+                $(this).data('mousedown', true);
+            });
+
+            $('#video').on('mouseup', function(event) {
+                event.stopPropagation();
+                event.preventDefault();
+                $(this).data('mousedown', false);
+            });
+        });
+
+        function closeVideo() {
+            var video = document.getElementById('video');
+            video.pause();
+            video.currentTime = 0;
+        
+            $('#video-container').hide();
+            var title = $('.season:visible').attr('id');
+            document.title = title ? 'Skins - ' + title.charAt(0).toUpperCase() + title.slice(1) : 'Skins Seasons';
+        }
+    </script>
+</body>
+</html>
